@@ -22,7 +22,7 @@ InitializeLogFile
 resourceID = WScript.Arguments(0)
 collectionID = WScript.Arguments(1)
 
-Log ("Provided computer name:  " & resourceID )
+Log ("Provided resource id:  " & resourceID )
 Log ("Provided collection id:  " & collectionID )
 
 If Failcode = 0 then
