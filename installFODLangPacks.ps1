@@ -9,8 +9,8 @@
     Version: 1.0
     Original Author: Shishir Kushawaha
     Modifiedby: Shishir Kushawaha
-    Email: Shishir.Kushawaha@manpowergroup.com    
-    Date Created: 22-07-2022
+    Email: srktcet@gmail.com  
+    Date Created: 22-07-2020
 #> 
 
 #region variable declaration
@@ -45,7 +45,7 @@ catch [exception]
 
 # Reset WindowsUpdate key
 cmd.exe /c "REG ADD HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /V UseWUServer /T REG_DWORD /D 1 /F
-Write-Output "Set WindowsUpdate key to `"0`", exit code: $?" | Out-File $logfile -append
+Write-Output "Set WindowsUpdate key to `"1`", exit code: $?" | Out-File $logfile -append
    
 # Restart service
 Restart-Service wuauserv -Verbose
