@@ -45,4 +45,5 @@ while(($($tsenv.Value($var)) -ne ""))
 }
 $tsenv.Value('udiapplist')=$applist
 $applist | Out-File $logfile -append
-Write-Output "SECTION START : Capture Applications list. : $(Get-Date)" | Out-File $logfile -append
+Write-Output "SECTION END : Capture Applications list. : $(Get-Date)" | Out-File $logfile -append
+#endregion processing application list
